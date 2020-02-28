@@ -12,7 +12,7 @@ public class Main {
 			mathTopic.addSubscriber(sub);
 		}
 		Scanner sc = new Scanner(System.in);
-		String input = sc.next();
+		int input = sc.nextInt();
 		mathTopic.dispatchEvent(input);
 	}
 }
