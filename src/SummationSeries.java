@@ -1,8 +1,9 @@
 public class SummationSeries implements ISubscriber
 {
     @Override
-    public void notifySubscriber(int input)
+    public void notifySubscriber(String input)
     {
-        System.out.println(" Summation Series = " + (input*(input+1))/2 );
+        int in = Integer.parseInt(input) ;
+        System.out.println(" Summation Series = " + (in*(in+1))/2 );
     }
 }
