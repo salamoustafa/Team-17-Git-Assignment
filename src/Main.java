@@ -4,7 +4,8 @@ public class Main {
 	//Array of all mathematical operations implemented
 	//Please Create a new Object of your class in it
 	private static ISubscriber subscribers [] = {
-		new CircleArea(),
+		new sphereAreaSubscriber(),
+    new CircleArea(),
 	};
 	public static void main(String[] args) {
 		Topic mathTopic = new Topic();
@@ -14,7 +15,7 @@ public class Main {
 			mathTopic.addSubscriber(sub);
 		}
 		Scanner sc = new Scanner(System.in);
-		String input = sc.next();
+		int input = sc.nextInt();
 		mathTopic.dispatchEvent(input);
 	}
 }

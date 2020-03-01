@@ -16,7 +16,6 @@ public class Topic {
 	public List<ISubscriber> getSubscribers() {
 		return subscribers;
 	}
-	
 	public void dispatchEvent(String input) {
 		//for each mathematical operation dispatch each subscriber to the interface whith user input
 		for (ISubscriber sub : this.getSubscribers()) {
