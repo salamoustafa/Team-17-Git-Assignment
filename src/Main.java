@@ -7,6 +7,7 @@ public class Main {
 		new sphereAreaSubscriber(),
     new CircleArea(),
 			new SummationSeries(),
+			new LucasSeries()
 	};
 	public static void main(String[] args)
 	{
