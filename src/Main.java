@@ -5,9 +5,9 @@ public class Main {
 	//Please Create a new Object of your class in it
 	private static ISubscriber subscribers [] = {
 		new sphereAreaSubscriber(),
-    new CircleArea(),
-			new SummationSeries(),
-			new LucasSeries()
+    	new CircleArea(),
+		new SummationSeries(),
+		new LucasSeries()
 	};
 	public static void main(String[] args)
 	{
@@ -20,5 +20,6 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		String input = sc.next();
 		mathTopic.dispatchEvent(input);
+		sc.close();
 	}
 }
