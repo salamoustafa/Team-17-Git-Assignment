@@ -6,8 +6,10 @@ public class Main {
 	private static ISubscriber subscribers [] = {
 		new sphereAreaSubscriber(),
     new CircleArea(),
+			new SummationSeries(),
 	};
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		Topic mathTopic = new Topic();
 		//Loop that adds every element in array to the private attribute 
 		//subscribers[] in topic 
