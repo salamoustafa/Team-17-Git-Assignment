@@ -6,6 +6,7 @@ public class Main {
 	private static ISubscriber subscribers [] = {
 		new sphereAreaSubscriber(),
     new CircleArea(),
+			new SummationSeries(),
 	};
 	public static void main(String[] args)
 	{
