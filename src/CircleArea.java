@@ -7,6 +7,6 @@ public class CircleArea implements ISubscriber{
 
     }
     public double calcArea(double r){
-        return 2.0*(22.0/7.0)*r;
+        return (22.0/7.0)*r*r;
     }
 }
