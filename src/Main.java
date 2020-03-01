@@ -17,7 +17,7 @@ public class Main {
 			mathTopic.addSubscriber(sub);
 		}
 		Scanner sc = new Scanner(System.in);
-		int input = sc.nextInt();
+		String input = sc.next();
 		mathTopic.dispatchEvent(input);
 	}
 }
