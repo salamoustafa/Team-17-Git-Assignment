@@ -2,9 +2,12 @@ import java.util.Scanner;
 
 public class Main {
 	private static ISubscriber subscribers [] = {
-			new SimpleSubscriber(),
-			new ReallySimpleSubscriber(),
-                        new MultSer(),
+		new sphereAreaSubscriber(),
+    	new CircleArea(),
+		new SummationSeries(),
+		new LucasSeries(),
+		new sphereCircumferenceSubscriber(),
+    new MultSer(),
 	};
 	public static void main(String[] args) {
 		Topic mathTopic = new Topic();
